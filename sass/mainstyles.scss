@@ -1,0 +1,109 @@
+// Colors
+$black: #000;
+$white: #FFF;
+$grey: #d3d3d3;
+
+$text: #222;
+$text-secondary: rgba(66, 66, 66, 0.85);
+$text-tertiary: rgba(66, 66, 66, 0.7);
+$link: #0E94C7;
+$headline: #222;
+
+$text-overlay: #FFF;
+$text-overlay-secondary: rgba(255, 255, 255, 0.85);
+$text-overlay-tertiary: rgba(255, 255, 255, 0.7);
+$link-overlay: #FFF;
+
+$brand-primary: #000;
+$brand-secondary: #000;
+$brand-tertiary: #000;
+$brand-quaternary: #000;
+$brand-quinary: #000;
+
+
+
+// Fonts
+$font-stack: Helvetica, Arial, sans-serif;
+$base-font-size: 14px;
+$base-line-height: 20px;
+
+$header-line-height: 40px;
+
+$size-h1: 33px;
+$size-h2: 25px;
+$size-h3: 21px;
+$size-h4: 18px;
+$size-h5: 16px;
+$size-h6: 14px;
+
+
+
+// RESETS
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  max-width: 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+html {
+  overflow: auto;
+  height: 100%;
+  font-family: $font-stack;
+  font-size: $base-font-size;
+}
+
+body {
+  font-family: $font-stack;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+// Standard Elements
+a, a:visited, a:link {
+  color: $link;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: $size-h1;
+  line-height: $header-line-height;
+}
+h2 {
+  font-size: $size-h2;
+  line-height: $header-line-height;
+}
+h3 {
+  font-size: $size-h3;
+  line-height: $header-line-height;
+}
+h4 {
+  font-size: $size-h4;
+  line-height: $base-line-height;
+}
+h5 {
+  font-size: $size-h5;
+  line-height: $base-line-height;
+}
+h6 {
+  font-size: $size-h6;
+  line-height: $base-line-height;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header, .wd_title {
+  color: $headline;
+}
