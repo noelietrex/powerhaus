@@ -1,0 +1,62 @@
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  max-width: 100%; }
+
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 14px;
+  line-height: 20px; }
+
+html {
+  overflow: auto;
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px; }
+
+a, a:visited, a:link {
+  color: #0E94C7;
+  text-decoration: none; }
+
+h1 {
+  font-size: 33px;
+  line-height: 40px; }
+
+h2 {
+  font-size: 25px;
+  line-height: 40px; }
+
+h3 {
+  font-size: 21px;
+  line-height: 40px; }
+
+h4 {
+  font-size: 18px;
+  line-height: 20px; }
+
+h5 {
+  font-size: 16px;
+  line-height: 20px; }
+
+h6 {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.header, .wd_title {
+  color: #222; }
+
+/*# sourceMappingURL=mainstyles.css.map */
