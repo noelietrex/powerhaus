@@ -15,7 +15,7 @@ $text-overlay-tertiary: rgba(255, 255, 255, 0.7);
 $link-overlay: #FFF;
 
 $brand-primary: #053A4F;
-$brand-secondary: #000;
+$brand-secondary: #074154;
 $brand-tertiary: #000;
 $brand-quaternary: #000;
 $brand-quinary: #000;
@@ -113,6 +113,27 @@ h6 {
   color: $headline;
 }
 
+// Buttons
+button {
+  border: 1px solid $white;
+  background-color: transparent;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 6px 30px;
+  a, a:visited {
+    color: white;
+  }
+  &:hover {
+    background-color: $white;
+    color: $brand-secondary;
+    text-decoration: none;
+    a, a:visited {
+      color: $brand-secondary;
+      text-decoration: none;
+    }
+  }
+}
+
 // Nav
 header {
   background-color: $brand-primary;
@@ -125,6 +146,12 @@ header {
   }
 }
 header {
+  .navbar {
+    margin-bottom: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+    border: none;
+    background-color: $brand-primary;
+  }
   nav {
     ul.navbar-nav {
       margin-top: 25px;
@@ -146,3 +173,47 @@ header {
     }
   }
 }
+
+// Banner
+.banner_wrapper {
+  background-image: url(../images/banner_cision.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  color: $white;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(21deg,rgba(0,131,126,.7) 0,rgba(5,58,79,.7) 100%);
+    top: 0;
+    left: 0;
+  }
+  .banner_text_container {
+    z-index: 1;
+    position: relative;
+    h1 {
+      color: $white;
+      text-transform: uppercase;
+    }
+    p {
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 1.5;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+  }
+}
+
+
+//Bootstrap Overwrites
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: transparent;
+}
+
